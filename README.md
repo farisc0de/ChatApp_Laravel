@@ -15,15 +15,15 @@ ChatApp rewrite in Laravel Reverb with AES Encryption
 
 ## TODO
 
-[ ] AES Encryption
-[x] User Authentication
-[x] User Registration
-[x] User Profile
-[x] User Online/Offline Status
-[x] User Typing Status
-[x] Multiple Chat Rooms
-[ ] Chat Rooms Dashboard
-[ ] Emoji Support
+1. [x] AES Encryption
+2. [x] User Authentication
+3. [x] User Registration
+4. [x] User Profile
+5. [x] User Online/Offline Status
+6. [x] User Typing Status
+7. [x] Multiple Chat Rooms
+8. [ ] Chat Rooms Dashboard
+9. [ ] Emoji Support
 
 ## License
 

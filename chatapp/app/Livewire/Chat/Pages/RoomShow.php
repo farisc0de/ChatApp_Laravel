@@ -4,6 +4,7 @@ namespace App\Livewire\Chat\Pages;
 
 use App\Models\Message;
 use App\Models\Room;
+use Illuminate\Support\Facades\Crypt;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Rule;
 use Livewire\Component;
@@ -26,6 +27,8 @@ class RoomShow extends Component
     public function submit()
     {
         $this->validate();
+
+        $this->body = Crypt::encrypt($this->body);
 
         $message = Message::make($this->only('body'));
 

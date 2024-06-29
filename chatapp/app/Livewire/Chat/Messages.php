@@ -6,6 +6,7 @@ use App\Models\Message;
 use App\Models\Room;
 use Livewire\Component;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Facades\Crypt;
 use Livewire\Attributes\On;
 
 class Messages extends Component
@@ -27,7 +28,11 @@ class Messages extends Component
     #[On('message.created')]
     public function prependMessage($id)
     {
-        $this->messages->push(Message::with('user')->find($id));
+        $message = Message::with('user')->find($id);
+
+        $message['body'] = Crypt::decrypt($message['body']);
+
+        $this->messages->push($message);
     }
 
     #[On('echo-private:chat.rool.{room.id},MessageCreated')]

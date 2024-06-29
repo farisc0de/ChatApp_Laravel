@@ -4,8 +4,6 @@
                         Users
                     </h3>
 
-                    {{ var_dump($typingIds) }}
-
                     <ul class="space-y-1 mt-3">
                         @foreach ($this->users as $user)
                             <li class="flex items-end justify-between space-x-1 bg-gray-100 rounded-lg px-3 py-1">
@@ -19,8 +17,6 @@
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                                 </svg>
-
-
                             </li>
                         @endforeach
                     </ul>
