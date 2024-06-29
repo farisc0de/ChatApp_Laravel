@@ -15,6 +15,9 @@ ChatApp rewrite in Laravel Reverb with AES Encryption
 
 ## Screenshots
 
+![image](https://github.com/farisc0de/ChatApp_Laravel/assets/76238196/fb87c4ad-d5f8-4716-bcd0-6fb44d883b61)
+
+![image](https://github.com/farisc0de/ChatApp_Laravel/assets/76238196/e4b280aa-725f-48c5-88b6-860b16497470)
 
 ## TODO
 
