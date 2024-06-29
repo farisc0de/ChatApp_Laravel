@@ -13,6 +13,9 @@ ChatApp rewrite in Laravel Reverb with AES Encryption
 7. User Typing Status
 8. Emoji Support
 
+## Screenshots
+
+
 ## TODO
 
 1. [x] AES Encryption
@@ -22,7 +25,7 @@ ChatApp rewrite in Laravel Reverb with AES Encryption
 5. [x] User Online/Offline Status
 6. [x] User Typing Status
 7. [x] Multiple Chat Rooms
-8. [ ] Chat Rooms Dashboard
+8. [x] Chat Rooms Dashboard
 9. [ ] Emoji Support
 
 ## License

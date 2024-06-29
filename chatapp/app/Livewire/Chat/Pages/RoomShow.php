@@ -14,7 +14,6 @@ class RoomShow extends Component
 
     public Room $room;
 
-
     #[Rule('required')]
     public string $body = '';
 
