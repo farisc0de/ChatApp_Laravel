@@ -18,9 +18,16 @@ class Messages extends Component
 
     public function mount()
     {
+
+        $messages = $this->room->messages()->with('user')->oldest()->take(100)->get();
+
+        $messages->each(function ($message) {
+            $message['body'] = Crypt::decrypt($message['body']);
+        });
+
         $this->fill(
             [
-                'messages' => $this->room->messages()->with('user')->oldest()->take(100)->get()
+                'messages' => $messages
             ]
         );
     }
